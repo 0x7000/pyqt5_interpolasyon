@@ -4,11 +4,11 @@ from scipy.interpolate import interp1d
 def intp(arg: str, x: list, y: list, q: float):
     x1 = []
     y1 = []
-    for xx in x:
-        x1. append(int(xx))
-    for yy in y:
-        y1.append(int(yy))
     try:
+        for xx in x:
+            x1. append(int(xx))
+        for yy in y:
+            y1.append(int(yy))
         if len(x1) != len(y1):
             raise Exception("Diziler eşit değil.")
         else:
