@@ -10,7 +10,7 @@ def intp(arg: str, x: list, y: list, q: float):
         y1.append(int(yy))
     try:
         if len(x1) != len(y1):
-            raise Exception("Diziler eşit değil")
+            raise Exception("Diziler eşit değil.")
         else:
             if arg == "x":
                 inp = interp1d(x1, y1, fill_value="extrapolate", kind="linear")
