@@ -19,5 +19,4 @@ def intp(arg: str, x: list, y: list, q: float):
             sonuc = inp(q)
             return sonuc
     except Exception as e:
-        print(e)
         return str(e)
