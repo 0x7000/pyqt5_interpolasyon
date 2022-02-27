@@ -76,9 +76,10 @@ class Ui_Form(object):
         self.CpushButton.clicked.connect(self.YlineEdit.clear)
         self.CpushButton.clicked.connect(self.XlineEdit.clear)
         QtCore.QMetaObject.connectSlotsByName(Form)
-
+        # ben yazdım....
         self.XpushButton.clicked.connect(self.xdegeral)
         self.YpushButton.clicked.connect(self.ydegeral)
+        # ben yazdım....
 
     def xdegeral(self):
         x = list(self.XlineEdit.text().split(","))
@@ -104,13 +105,9 @@ class Ui_Form(object):
 
     @staticmethod
     def err_dialog():
-        msgbox = QMessageBox()
-        msgbox.setIcon(QMessageBox.Critical)
-        msgbox.setText("Lütfen ?: için Değer Girin")
-        msgbox.setWindowTitle("Hata")
-        msgbox.setStandardButtons(QMessageBox.Ok)
-        # ret = msgbox.exec_() ile gelen mesajın seçimini alırız.
-        msgbox.exec_()
+        msg = QMessageBox(QMessageBox.Critical, "Hata", "Lütfen ?: İçin Değer Girin", QMessageBox.Ok)
+        msg.exec_()
+        # ret = msgbox.exec_() ile gelen mesajın seçimini alırız. ok cancel yes no vb.
 
 
     def retranslateUi(self, Form):
