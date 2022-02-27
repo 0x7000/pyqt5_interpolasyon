@@ -105,6 +105,7 @@ class Ui_Form(object):
     @staticmethod
     def err_dialog():
         msgbox = QMessageBox()
+        msgbox.setIcon(QMessageBox.Critical)
         msgbox.setText("Lütfen ?: için Değer Girin")
         msgbox.setWindowTitle("Hata")
         msgbox.setStandardButtons(QMessageBox.Ok)
