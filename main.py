@@ -80,24 +80,16 @@ class Ui_Form(object):
 
     def xdegeral(self):
         x = list(self.XlineEdit.text().split(","))
-        print(x)
         y = list(self.YlineEdit.text().split(","))
-        print(y)
         q = float(self.lineEdit.text())
-        print(q)
         sonuc = intp("x", x, y, q)
-        print(sonuc)
         self.lineEdit_2.setText(str(sonuc))
 
     def ydegeral(self):
         x = list(self.XlineEdit.text().split(","))
-        print(x)
         y = list(self.YlineEdit.text().split(","))
-        print(y)
         q = float(self.lineEdit.text())
-        print(q)
         sonuc = intp("y", x, y, q)
-        print(sonuc)
         self.lineEdit_2.setText(str(sonuc))
 
 
